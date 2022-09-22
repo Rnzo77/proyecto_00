@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links de fuentes tipograficas -->
     <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700,800,900" rel="stylesheet">
+    <!-- CSS BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Link de iconos -->
@@ -14,127 +16,256 @@
 </head>
 <body class="body-dcompras">
     <!-- Header -->
-    <header class="header-dcompras">
-        <!-- Logo -->
-        <div class="header-dcompras-principal">
+    <header>
+        <div class="header-dcompras">
+            <!-- Logo -->
             <a href="../index.html">
                 <h1><span>D</span>COMPRAS</h1>
             </a>
             <!-- search -->
-            <div class="buscador-dcompras">
+            <form class="buscador-dcompras">
                 <input type="text" placeholder="Buscar...">
-                <i class="fa fa-search" aria-hidden="true"></i>
-            </div>
+                <button>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
             <!-- Login -->
-            <a href="../pages/usuario.html" class="login-dcompras">
+            <a class="login-dcompras" href="pages/login.html">
                 <i class="fa-solid fa-user-large"></i>
                 <span>Login</span>
-            </a> 
+            </a>
         </div>
         <!-- Menu de navegacion -->
-        <nav>
-            <ul>
-                <li><a href="../pages/categorias.html">Categorías</a></li>
-                <li><a href="../pages/historial.html">Historial</a></li>
-                <li><a href="../pages/ofertas.html">Ofertas</a></li>
-                <li><a href="">Favoritos</a></li>
-                <li><a href="">Carrito</a></li>
-            </ul>
-        </nav>
+        <div class="menu-header">
+            <nav>
+                <ul class="row mx-auto">
+                    <li class="col btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"><a href="#">Categorías <i class="fa-solid fa-sort-down"></i></a></li>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Audio y video</a></li>
+                            <li><a class="dropdown-item" href="#">Computadoras y laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Celulares</a></li>
+                            <li><a class="dropdown-item" href="#">Consolas y videojuegos</a></li>
+                            <li><a class="dropdown-item" href="#">Electrodomesticos</a></li>
+                        </ul>
+                    <li class="col"><a href="pages/ofertas.html">Ofertas</a></li>
+                    <li class="col"><a href="pages/historial.html">Historial</a></li>
+                    <li class="col"><a href="">Favoritos</a></li>
+                    <li class="col"><a href="">Carrito</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Menu de navegacion para movil -->
+        <div class="nav-dcompras-movil">
+            <form class="buscador-dcompras-movil">
+                <input type="text" placeholder="Buscar...">
+                <button>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            <div class="menu-header-movil">
+                <nav class="navbar">
+                    <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                            <ul>
+                                <li><a href="pages/categorias.html">Categorías</a></li>
+                                <li><a href="pages/ofertas.html">Ofertas</a></li>
+                                <li><a href="pages/historial.html">Historial</a></li>
+                                <li><a href="#">Favoritos</a></li>
+                                <li><a href="#">Carrito</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
     <!-- Contenido principal de la pagina de inicio -->
     <section class="cont-principal-dcompras">
         <!-- Call to action -->
-        <div class="ad-dcompras-1">
-            <a href="">
-                <img src="../img/img-ad-1.jpg" alt="">
-            </a>
-        </div>
-        <div class="ad-dcompras-1">
-            <a href="">
-                <img src="../img/img-ad-2.jpg" alt="">
-            </a>
+        <div class="ad-dcompras">
+            <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/img-ad-1.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/img-ad-2.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/img-ad-3.jpg" class="d-block" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
         <!-- Lista principal -->
         <div class="lista-principal-index">
-            <h2>Ofertas en Celulares</h2>
+            <h2>
+                <a href="#">Ofertas en Celulares</a>
+            </h2>
             <div class="lista-items-index">
-                <a href="">
+                <a class="item-dcompra-1" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
-                <a href="">
+                <a class="item-dcompra-2" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
-                <a href="">
+                <a class="item-dcompra-3" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
-                <a href="">
+                <a class="item-dcompra-4" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
-                <a href="">
+                <a class="item-dcompra-5" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
             </div>
         </div>
-        <div class="ad-dcompras-1">
-            <a href="">
-                <img src="../img/img-ad-1.jpg" alt="">
-            </a>
-        </div>
-        <div class="ad-dcompras-1">
-            <a href="">
-                <img src="../img/img-ad-1.jpg" alt="">
-            </a>
+        <div class="ad-dcompras">
+            <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/img-ad-1.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/img-ad-2.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/img-ad-3.jpg" class="d-block" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
         <div class="lista-principal-index">
-            <h2>Ofertas en Computadoras y laptops</h2>
+            <h2>
+                <a href="#">Ofertas en Computadoras y laptops</a>
+            </h2>
             <div class="lista-items-index">
-                <a href="">
+                <a class="item-dcompra-1" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
-                <a href="">
+                <a class="item-dcompra-2" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
-                <a href="">
+                <a class="item-dcompra-3" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
-                <a href="">
+                <a class="item-dcompra-4" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
-                <a href="">
+                <a class="item-dcompra-5" href="">
                     <img src="../img/img-ej-items.jpg" alt="">
                     <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
                 </a>
             </div>
         </div>
-        <div class="ad-dcompras-1">
-            <a href="">
-                <img src="../img/img-ad-1.jpg" alt="">
-            </a>
+        <div class="ad-dcompras">
+            <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../img/img-ad-1.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/img-ad-2.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../img/img-ad-3.jpg" class="d-block" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
-        <div class="ad-dcompras-1">
-            <a href="">
-                <img src="../img/img-ad-1.jpg" alt="">
-            </a>
-
+        <div class="lista-principal-index">
+            <h2>
+                <a href="">Ofertas Celulares</a>
+            </h2>
+            <div class="lista-items-index">
+                <a class="item-dcompra-1" href="">
+                    <img src="../img/img-ej-items.jpg" alt="">
+                    <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
+                </a>
+                <a class="item-dcompra-2" href="">
+                    <img src="../img/img-ej-items.jpg" alt="">
+                    <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
+                </a>
+                <a class="item-dcompra-3" href="">
+                    <img src="../img/img-ej-items.jpg" alt="">
+                    <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
+                </a>
+                <a class="item-dcompra-4" href="">
+                    <img src="../img/img-ej-items.jpg" alt="">
+                    <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
+                </a>
+                <a class="item-dcompra-5" href="">
+                    <img src="../img/img-ej-items.jpg" alt="">
+                    <p><span>Lorem ipsum dolor.</span> Sit amet consectetur adipisicing elit. Nesciunt incidunt doloremque aliquid hic nulla</p>
+                </a>
+            </div>
         </div>
     </section>
     <footer class="footer-index">
-        <p>contacto@dcompras.com</p>
-        <a href="http://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-        <a href="http://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
-        <a href="http://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
-        <p>© COPYRIGHT 2022 Renzo Loli</p>
+        <div class="foot-info row mx-auto">
+            <p class="col-3">contacto@dcompras.com</p>
+            <div class="col-6">
+                <a href="http://www.facebook.com" target="_blank" class="fa-brands fa-facebook"></a>
+                <a href="http://www.twitter.com" target="_blank" class="fa-brands fa-twitter"></a>
+                <a href="http://www.instagram.com" target="_blank" class="fa-brands fa-instagram"></a>
+            </div>
+            <p class="col-3">© C<span>OPYRIGHT 2022</span> Renzo Loli</p>
+            </div>
         </div>
+        
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
