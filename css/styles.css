@@ -1,606 +1,532 @@
+@charset "UTF-8";
 /* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+a {
+  text-decoration: none; }
 
-a{
-    text-decoration: none;
-}
-
-/* Propiedades del body */
-
-.body-dcompras{
-    font-family: 'Inter', sans-serif;
-}
+/* borders */
+/* flex */
+header .header-dcompras, section, footer .foot-info, header .header-login-dcompras {
+  display: flex;
+  justify-content: center;
+  align-content: center; }
 
 /* Propiedades del header */
-
-.header-dcompras{
-    text-align: center;
-    width: 75rem;
-    padding: 1rem 0;
-    border-style: none none solid;
-    border-width: 0.05rem;
-    border-color: #00000066;
-    margin: 0 auto;
-    display: flex;
-}
-
-/* Propiedades del logo */
-
-.header-dcompras a{
+header .header-dcompras {
+  text-align: center;
+  width: 75rem;
+  padding: 1rem 0;
+  border-style: none none solid;
+  border-width: 0.05rem;
+  border-color: #00000066;
+  margin: 0 auto; }
+  header .header-dcompras a {
     padding: 0;
-    width: 16.6%;
-}
-
-.header-dcompras a h1{
-    margin: 0;
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: black;
-    letter-spacing: -0.05rem;
-    display: inline-block;
-}
-
-.header-dcompras a h1 span{
-    font-size: 1.75rem;
-    display: inline-block;
-    height: 2rem;
-    background-color: #4b4be6;
-    color: white;
-    font-weight: 800;
-    padding-right: 0.4rem;
-    padding-left: 0.4rem;
-    margin-right: 0.15rem;
-}
-
-/* Propiedades del buscador */
-
-.buscador-dcompras{
+    width: 16.6%; }
+    header .header-dcompras a h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: black;
+      letter-spacing: -0.05rem;
+      display: inline-block; }
+      header .header-dcompras a h1 span {
+        font-size: 1.75rem;
+        display: inline-block;
+        height: 2rem;
+        background-color: #4b4be6;
+        color: white;
+        font-weight: 800;
+        padding: 0 0.4rem;
+        margin-right: 0.15rem; }
+  header .header-dcompras form {
     width: 66.6%;
     padding: 0;
-    margin: 0;
-}
-
-.buscador-dcompras input{
-    width: 90%;
-    height: 2rem;
-    border-radius: 0.6rem;
-    border-style: solid;
-    border-width: 0.08rem;
-    padding: 0 0.6rem;
-    font-size: 1rem;
-}
-
-.buscador-dcompras button{
-    position: relative;
-    right: 2.3rem;
-    width: 0;
-    color: black;
-    background-color: #ffffff00;
-    border-style: none;
-}
-
-/* Propiedades del login */
-
-.login-dcompras{
+    margin: 0; }
+    header .header-dcompras form input {
+      width: 90%;
+      height: 2rem;
+      border-radius: 0.6rem;
+      border-style: solid;
+      border-width: 0.08rem;
+      padding: 0 0.6rem;
+      font-size: 1rem; }
+    header .header-dcompras form button {
+      position: relative;
+      right: 2.3rem;
+      width: 0;
+      color: black;
+      background-color: #ffffff00;
+      border-style: none; }
+  header .header-dcompras .login-dcompras {
     margin-top: 0.35rem;
     display: inline-block;
     color: black;
-}
+    transition-duration: 0.2s; }
+    header .header-dcompras .login-dcompras i {
+      font-size: 1.3rem;
+      margin: 0 0.25rem; }
+    header .header-dcompras .login-dcompras span {
+      font-size: 1rem; }
+    header .header-dcompras .login-dcompras:hover {
+      color: #4b4be6; }
 
-.login-dcompras i{
-    font-size: 1.3rem;
-    margin: 0 0.25rem;
-}
-
-.login-dcompras span{
-    font-size: 1rem;
-}
-
-/* Propiedades del menu */
-
-.menu-header nav ul{
-    width: 50rem;
-    padding: 0;
-    margin: 0 auto;
-}
-
-.menu-header nav ul li{
+header .menu-header nav ul {
+  width: 50rem;
+  padding: 0;
+  margin: 0 auto; }
+  header .menu-header nav ul .dropdown-menu {
+    width: 10rem !important;
+    border-radius: 0;
+    box-shadow: none !important; }
+  header .menu-header nav ul li {
     padding: 0;
     text-align: center;
     color: white;
     margin: 0;
     list-style: none;
-    border-style: none;
+    border-style: none; }
+    header .menu-header nav ul li a {
+      width: 100%;
+      padding-top: 0.5rem;
+      height: 2.2rem;
+      display: inline-block;
+      color: white;
+      font-size: 0.9rem;
+      border-style: none solid;
+      background-color: #4b4be6;
+      border-width: 0.02rem;
+      border-color: white;
+      transition-duration: 0.4s; }
+      header .menu-header nav ul li a:hover {
+        font-size: 0.9rem;
+        background-color: #808cf8; }
+    header .menu-header nav ul li .dropdown-item {
+      color: black !important;
+      background-color: #ffffff !important;
+      border-style: solid none !important;
+      font-size: 0.75rem !important;
+      padding: 0.5rem 0 0 !important;
+      border-width: 0.05rem !important;
+      border-color: #00000040 !important; }
+      header .menu-header nav ul li .dropdown-item:hover {
+        background-color: #bbc1ff !important; }
 
-}
-
-.menu-header nav ul li a{
-    width: 100%;
-    padding-top: 0.5rem;
-    height: 2.2rem;
-    display: inline-block;
-    color: white;
-    font-size: 0.9rem;
-    border-style: none solid;
-    background-color: #4b4be6;
-    border-color: white;
-    border-width: 0.02rem;
-}
-
-.menu-header nav ul li a:hover{
-    color: black;
-    font-size: 0.9rem;
-    border-style: solid;
-    background-color: #ffffff;
-    border-color: black;
-    border-width: 0.02rem;
-}
-
-.dropdown-menu{
-    left: -1.1rem  !important;
-    width: 12rem !important;
-    border-radius: 0;
-    box-shadow: none !important;
-}
-
-.dropdown-item{
-    color: black !important;
-    background-color: #ffffff !important;
-    border-style: solid none !important;
-    font-size: 0.75rem !important;
-    border-width: 0.05rem !important;
-    border-color: #00000040 !important;
-}
-
-.dropdown-item:hover{
-    background-color: #cacaca !important;
-}
-
-.nav-dcompras-movil{
-    display: none;
-}
+header .nav-dcompras-movil {
+  display: none; }
 
 /* Propiedades del contenido principal */
-
-.cont-principal-dcompras{
-    margin: 2rem 0 4rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-}
-
-/* Propiedades de la oferta del Call to action */
-
-.ad-dcompras{
+section {
+  margin: 2rem 0 4rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: left; }
+  section .ad-dcompras {
+    width: 75rem; }
+    section .ad-dcompras img {
+      width: 100%; }
+    section .ad-dcompras .img-ad-dcompras-movil {
+      display: none; }
+  section .lista-principal-index {
     width: 75rem;
-}
-
-.ad-dcompras img{
-    width: 100%;
-}
-
-/* Propiedades de los items de compra */
-
-.lista-principal-index{
-    width: 75rem;
-    margin: 3rem 0;
-}
-
-.lista-principal-index h2{
-    font-weight: 600;
-    font-size: 1.4rem;
-    color: #4b4be6;
-    padding: 1rem 0;
-    border-top-style: solid;
-    border-width: 0.05rem;
-    border-color: #00000066;
-}
-
-/* Propiedades de cada item */
-
-.lista-items-index{
-    display: grid;
-    grid-template-areas: 
-    "item-1 item-2 item-3 item-4 item-5";
-    gap: 1rem;
-}
-
-.lista-items-index a{
-    height: 20.5rem;
-    background-color: white;
-    border-style: solid;
-    border-color: #00000040;
-    border-width: 0.05rem;
-}
-
-.lista-items-index a:hover{
-    box-shadow: 0 0 0.25rem 0 #00000099;
-}
-
-.lista-items-index a img{
-    width: 90%;
-    margin: 0.7rem 5%;
-}
-
-.lista-items-index a p{
-    padding: 0.4rem 5%;
-    font-size: 0.85rem;
-    color: #282828;
-}
-
-.lista-items-index a p span{
-    font-weight: 600;
-}
-
-.item-dcompra-1{
-    grid-area: item-1;
-}
-
-.item-dcompra-2{
-    grid-area: item-2;
-}
-
-.item-dcompra-3{
-    grid-area: item-3;
-}
-
-.item-dcompra-4{
-    grid-area: item-4;
-}
-
-.item-dcompra-5{
-    grid-area: item-5;
-}
-
-/* Propiedades de las categorias */
-
-.lista-items-categorias{
-    display: grid;
-    grid-template-areas: 
-    "cat-1 cat-2 cat-3 cat-4 cat-5";
-    gap: 1rem;
-}
-
-.lista-items-categorias a{
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.lista-items-categorias a img{
-    margin-bottom: 1rem;
-    border-radius: 50%;
-}
-
-.lista-items-categorias a p{
-    color: black;
-    font-weight: 700;
-    font-size: 1.125rem;
-}
+    margin: 3rem 0; }
+    section .lista-principal-index h2 {
+      font-weight: 600;
+      font-size: 1.4rem;
+      color: #4b4be6;
+      padding: 1rem 0;
+      border-top-style: solid;
+      border-width: 0.05rem;
+      border-color: #00000066; }
+    section .lista-principal-index .lista-items-index {
+      display: grid;
+      grid-template-areas: "item-1 item-2 item-3 item-4 item-5";
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      gap: 1rem; }
+      section .lista-principal-index .lista-items-index a {
+        height: auto;
+        background-color: white;
+        border-style: solid;
+        border-width: 0.05rem;
+        border-color: #00000040;
+        transition-duration: 0.4s; }
+        section .lista-principal-index .lista-items-index a:hover {
+          box-shadow: 0 0 0.4rem 0 #00000066; }
+        section .lista-principal-index .lista-items-index a img {
+          width: 90%;
+          margin: 0.7rem 5%; }
+        section .lista-principal-index .lista-items-index a span {
+          display: block;
+          padding: 0.4rem 5%;
+          font-size: 1rem;
+          font-weight: 700;
+          color: #282828; }
+        section .lista-principal-index .lista-items-index a p {
+          display: block;
+          padding: 0.2rem 5% 0.4rem;
+          font-size: 0.95rem;
+          color: #282828; }
+      section .lista-principal-index .lista-items-index .item-dcompra-1 {
+        grid-area: item-1; }
+      section .lista-principal-index .lista-items-index .item-dcompra-2 {
+        grid-area: item-2; }
+      section .lista-principal-index .lista-items-index .item-dcompra-3 {
+        grid-area: item-3; }
+      section .lista-principal-index .lista-items-index .item-dcompra-4 {
+        grid-area: item-4; }
+      section .lista-principal-index .lista-items-index .item-dcompra-5 {
+        grid-area: item-5; }
+    section .lista-principal-index .lista-items-categorias {
+      display: grid;
+      grid-template-areas: "cat-1 cat-2 cat-3 cat-4 cat-5";
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+      section .lista-principal-index .lista-items-categorias a {
+        width: 100%;
+        margin-top: 1rem;
+        text-align: center;
+        transition-duration: 0.4s; }
+        section .lista-principal-index .lista-items-categorias a:hover {
+          margin-top: 0; }
+        section .lista-principal-index .lista-items-categorias a img {
+          max-width: 100%;
+          margin-bottom: 1rem;
+          border-radius: 50%; }
+        section .lista-principal-index .lista-items-categorias a p {
+          color: black;
+          font-weight: 700;
+          font-size: 1.125rem; }
 
 /* Propiedades del footer */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  text-align: center; }
+  footer .foot-info {
+    width: 75rem; }
+    footer .foot-info div {
+      display: inline-block; }
+    footer .foot-info p {
+      font-size: 0.75rem;
+      display: inline-block;
+      color: white;
+      margin: 0;
+      padding: 0.6rem 0 0; }
+    footer .foot-info a {
+      font-size: 0.85rem;
+      padding: 0.75rem;
+      color: white; }
 
-.footer-index{
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    background-color: black;
-    text-align: center;
-}
+/* estilos del historial */
+section .lista-principal-index-2 {
+  margin: 2rem 0 0 !important; }
+  section .lista-principal-index-2 .lista-items-index-2 {
+    margin: 2rem 0 !important; }
 
-.foot-info{
-    width: 75rem;
-}
+/* Estilos del logi*/
+header .header-login-dcompras {
+  text-align: center;
+  width: 75rem;
+  padding: 2rem 0 1rem;
+  border-style: none none solid;
+  border-width: 0.1rem;
+  border-color: #00000066;
+  margin: 0 auto; }
+  header .header-login-dcompras a {
+    padding: 0;
+    width: 100%; }
+    header .header-login-dcompras a h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: black;
+      letter-spacing: -0.05rem;
+      display: inline-block; }
+      header .header-login-dcompras a h1 span {
+        font-size: 3rem;
+        display: inline-block;
+        height: 3.5rem;
+        background-color: #4b4be6;
+        color: white;
+        font-weight: 800;
+        padding: 0 0.7rem;
+        margin-right: 0.3rem; }
 
-.foot-info div{
-    display: inline-block;
-}
+.section-login {
+  margin: 3rem auto; }
+  .section-login h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.02rem;
+    color: #4b4be6; }
+  .section-login form {
+    background-color: #0000000a;
+    padding: 2rem;
+    margin: 1rem 0; }
+    .section-login form fieldset {
+      width: 30rem; }
+      .section-login form fieldset legend {
+        font-weight: 500;
+        text-align: left;
+        font-size: 1rem;
+        border-bottom-style: solid;
+        border-width: 0.05rem;
+        border-color: #00000066;
+        padding-bottom: 0.5rem; }
+      .section-login form fieldset div {
+        text-align: center; }
+        .section-login form fieldset div input {
+          height: 2rem;
+          border-radius: 0.6rem;
+          margin-top: 0.5rem; }
+        .section-login form fieldset div .correo-login-dcompras {
+          width: 85%;
+          border-style: solid;
+          border-width: 0.08rem;
+          padding: 0 0.6rem;
+          font-size: 1rem; }
+        .section-login form fieldset div .boton-login-dcompras {
+          background-color: #4b4be6;
+          color: white;
+          border: none;
+          padding: 0.1rem 0.6rem;
+          transition-duration: 0.2s; }
+          .section-login form fieldset div .boton-login-dcompras:hover {
+            background-color: #808cf8; }
+        .section-login form fieldset div .boton-registro-dcompras {
+          display: inline-block;
+          margin: 0.5rem auto;
+          width: 80%;
+          height: 2.2rem;
+          background-color: #4b4be6;
+          color: white;
+          border: none;
+          transition-duration: 0.2s; }
+          .section-login form fieldset div .boton-registro-dcompras:hover {
+            background-color: #808cf8; }
 
-.foot-info p{
-    font-size: 0.75rem;
-    display: inline-block;
-    color: white;
-    margin: 0;
-    padding: 0.6rem 0 0;
-}
-
-.foot-info a{
-    font-size: 0.85rem;
-    padding: 0.75rem;
-    color: white;
-}
+.footer-login {
+  position: fixed;
+  bottom: 0; }
 
 /* Propiedades para pantallas pequeñas */
+@media (max-width: 1250px) {
+  header .header-dcompras {
+    width: 60rem; }
+    header .header-dcompras a {
+      padding: 0;
+      width: 20%; }
+    header .header-dcompras form {
+      width: 60%; }
+      header .header-dcompras form input {
+        width: 95%; }
+  header .header-login-dcompras {
+    width: 90%; }
+  section .ad-dcompras {
+    width: 60rem; }
+  section .lista-principal-index {
+    width: 60rem;
+    margin: 2rem 0; }
+    section .lista-principal-index .lista-items-index {
+      grid-template-areas: "item-1 item-2 item-3 item-4";
+      grid-template-columns: 1fr 1fr 1fr 1fr; }
+      section .lista-principal-index .lista-items-index .item-dcompra-5 {
+        display: none; }
+  section .lista-items-categorias {
+    width: 60rem; }
+    section .lista-items-categorias a img {
+      width: 11.2rem; }
+    section .lista-items-categorias a p {
+      font-size: 0.95rem !important; }
+  footer .foot-info {
+    width: 60rem; } }
 
-@media (max-width: 1250px){
-    .header-dcompras{
-        width: 60rem;
-    }
-    .header-dcompras a{
-        padding: 0;
-        width: 20%;
-    }
-    .buscador-dcompras input{
-        width: 95%;
-    }
-    .buscador-dcompras{
-        width: 60%;
-    }
-    .ad-dcompras{
-        width: 60rem;
-    }
-    .item-dcompra-5{
-        display: none;
-    }
-    .lista-principal-index{
-        width: 60rem;
-        margin: 2rem 0;
-    }
-    .lista-items-categorias{
-        width: 60rem;
-    }
-    .lista-items-categorias a img{
-        width: 11.2rem;
-    }
-    .lista-items-categorias a p{
-        font-size: 0.95rem;
-    }
-    .foot-info{
-        width: 60rem;
-    }
-}
-
-@media (max-width: 1000px){
-    .header-dcompras{
-        width: 50rem;
-    }
-    .header-dcompras a{
-        padding: 0;
-        width: 20%;
-    }
-    .buscador-dcompras input{
-        width: 95%;
-    }
-    .buscador-dcompras{
-        width: 60%;
-    }
-    .ad-dcompras{
-        width: 50rem;
-    }
-    .item-dcompra-4{
-        display: none;
-    }
-    .lista-principal-index{
-        width: 45rem;
-        margin: 1.5rem 0;
-    }
-    .lista-items-categorias{
-        width: 45rem;
-    }
-    .lista-items-categorias a img{
-        width: 8.2rem;
-    }
-    .lista-items-categorias a p{
-        font-size: 0.8rem;
-    }
-    .foot-info{
-        width: 45rem;
-    }
-}
+@media (max-width: 1000px) {
+  header .header-dcompras {
+    width: 50rem; }
+  section .ad-dcompras {
+    width: 50rem; }
+  section .lista-principal-index {
+    width: 45rem;
+    margin: 1.5rem 0; }
+    section .lista-principal-index .lista-items-index {
+      grid-template-areas: "item-1 item-2 item-3";
+      grid-template-columns: 1fr 1fr 1fr; }
+      section .lista-principal-index .lista-items-index .item-dcompra-4 {
+        display: none; }
+  section .lista-items-categorias {
+    width: 45rem; }
+    section .lista-items-categorias a img {
+      width: 8.2rem; }
+    section .lista-items-categorias a p {
+      font-size: 0.8rem !important; }
+  footer .foot-info {
+    width: 50rem; } }
 
 /* Propiedades para pantallas celulares */
-
-@media (max-width: 850px){
-    header{
-        position: sticky;
-        top: -4.2rem;
-        z-index: 3;
-        background-color: white;
-        padding-bottom: 0.8rem;
-    }
-
-    .header-dcompras{
-        width: 90%;
-    }
-    .header-dcompras a{
-        width: auto;
-    }
-    .header-dcompras a h1{
-        position: relative;
-        left: 0;
-        text-align: left;
-    }
-    .login-dcompras{
+@media (max-width: 850px) {
+  header {
+    position: sticky;
+    top: -4.2rem;
+    z-index: 3;
+    background-color: white;
+    padding-bottom: 0.6rem; }
+    header .header-dcompras {
+      width: 90%;
+      justify-content: inherit; }
+      header .header-dcompras a {
+        width: auto; }
+        header .header-dcompras a h1 {
+          position: relative;
+          left: 0;
+          text-align: left; }
+      header .header-dcompras form {
+        display: none; }
+      header .header-dcompras .login-dcompras {
         position: absolute;
-        right: 5%;
-    }
-
-    .buscador-dcompras{
-        display: none;
-    }
-
-    .menu-header{
-        display: none;
-    }
-
-    .nav-dcompras-movil{
-        display: flex;
-        width: 90%;
-        margin: 1rem auto;
-    }
-
-    .buscador-dcompras-movil{
+        right: 5%; }
+    header .menu-header {
+      display: none; }
+    header .nav-dcompras-movil {
+      display: flex;
+      width: 90%;
+      margin: 1rem auto 0; }
+      header .nav-dcompras-movil form {
         display: inline-block;
         width: 100%;
-        padding: 0.25rem 0 0;
-    }
-    
-    .buscador-dcompras-movil input{
-        width: 95%;
-        height: 2rem;
-        border-radius: 0.6rem;
-        border-style: solid;
-        border-width: 0.08rem;
-        padding: 0 0.6rem;
-        font-size: 1rem;
-    }
-    
-    .buscador-dcompras-movil button{
-        width: 0;
-        position: relative;
-        right: 2.3rem;
-        color: black;
-        background-color: #ffffff00;
-        border-style: none;
-    }
-
-    .menu-header-movil{
+        padding: 0.25rem 0 0; }
+        header .nav-dcompras-movil form input {
+          width: 95%;
+          height: 2rem;
+          border-radius: 0.6rem;
+          border-style: solid;
+          border-width: 0.08rem;
+          padding: 0 0.6rem;
+          font-size: 1rem; }
+        header .nav-dcompras-movil form button {
+          width: 0;
+          position: relative;
+          right: 2.3rem;
+          color: black;
+          background-color: #ffffff00;
+          border-style: none; }
+      header .nav-dcompras-movil .menu-header-movil {
         display: inline-block;
-        width: 5rem;
-    }
-    
-    .menu-header-movil nav{
-        padding: 0;
-    }
-
-    #navbarTogglerDemo01 ul{
-        margin: 1rem 0 0;
-        padding: 0;
-        color: black !important;
-        position: relative;
-        left: -1.8rem;
-        
-    }
-
-    #navbarTogglerDemo01 ul li{
-        padding: 0.2rem 0.35rem;
-        list-style: none;
-        border-style: none;
-        text-align: right;
-        background-color: #ffffff;
-    }
-    #navbarTogglerDemo01 ul li:hover{
-        background-color: rgba(0, 0, 0, 0.2);
-    }
-
-    #navbarTogglerDemo01 ul li a{
-        font-size: 0.9rem;
-        color: black !important;
-    }
-
-    .cont-principal-dcompras{
-        margin-top: 0.5rem;
-    }
-
-    .ad-dcompras{
-        width: 98%;
-    }
-
-    .item-dcompra-3{
-        display: none;
-    }
-
-    .lista-principal-index{
-        width: 90%;
-        margin: 1.1rem 0;
-    }
-
-    .lista-items-index{
-        grid-template-areas: 
-        "item-1 item-2";
+        width: 5rem; }
+        header .nav-dcompras-movil .menu-header-movil nav {
+          padding: 0; }
+          header .nav-dcompras-movil .menu-header-movil nav div #navbarTogglerDemo01 ul {
+            margin: 1rem 0 0;
+            padding: 0;
+            color: black !important;
+            position: relative;
+            left: -1.8rem; }
+            header .nav-dcompras-movil .menu-header-movil nav div #navbarTogglerDemo01 ul li {
+              padding: 0.2rem 0.35rem;
+              list-style: none;
+              border-style: none;
+              text-align: right;
+              background-color: #ffffff; }
+              header .nav-dcompras-movil .menu-header-movil nav div #navbarTogglerDemo01 ul li:hover {
+                background-color: #00000033; }
+              header .nav-dcompras-movil .menu-header-movil nav div #navbarTogglerDemo01 ul li a {
+                font-size: 0.9rem;
+                color: black !important; }
+  section {
+    margin-top: 0.5rem; }
+    section .ad-dcompras {
+      display: block;
+      width: 98%; }
+      section .ad-dcompras .img-ad-dcompras {
+        display: none; }
+      section .ad-dcompras .img-ad-dcompras-movil {
+        width: 100%;
+        display: block; }
+    section .lista-principal-index {
+      width: 90%;
+      margin: 1rem 0; }
+      section .lista-principal-index .lista-items-index {
+        grid-template-areas: "item-1 item-2";
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
-        gap: 10%;
-    }
-
-    .lista-items-index a{
-        max-width: 16rem;
-        height: auto;
-    }
-
-    .lista-items-categorias{
-        width: 100%;
-    }
-
-    .lista-items-categorias a img{
+        gap: 10%; }
+        section .lista-principal-index .lista-items-index .item-dcompra-3 {
+          display: none; }
+        section .lista-principal-index .lista-items-index a {
+          margin: 0 auto;
+          max-width: 16rem;
+          height: auto; }
+    section .lista-items-categorias {
+      width: 100%; }
+      section .lista-items-categorias a img {
         max-width: 100%;
-        height: auto;
-    }
-
-    .lista-items-categorias a p{
-        display: none;
-    }
-
-    .footer-index{
-        position: initial;
-        display: block;
-    }
-
-    .foot-info{
-        width: 100%;
-    }
-
-    .foot-info p{
+        height: auto; }
+      section .lista-items-categorias a p {
+        display: none; }
+  .section-login form fieldset {
+    width: 28rem; }
+    .section-login form fieldset div .correo-login-dcompras {
+      width: 80%; }
+  footer {
+    position: initial;
+    display: block; }
+    footer .foot-info {
+      width: 100%; }
+      footer .foot-info p {
         text-align: center;
         font-size: 0.5rem;
-        padding: 0.5rem;
-    }
-    
-    .foot-info a{
+        padding: 0.5rem; }
+      footer .foot-info a {
         font-size: 0.7rem;
-        padding: 0.5rem;
-    }
-}
+        padding: 0.5rem; } }
 
-@media (max-width: 540px){
-    .item-dcompra-2{
-        display: none;
-    }
-
-    .lista-principal-index{
-        width: 90%;
-        margin: 1.1rem 0;
-    }
-
-    .lista-items-index{
-        grid-template-areas: 
-        "item-1";
-        justify-content: center;
-        gap: 0;
-    }
-
-    .lista-items-categorias{
-        text-align: left;
-        justify-content: center;
-        grid-template-areas:
-        "cat-1"
-        "cat-2"
-        "cat-3"
-        "cat-4"
-        "cat-5";
-        gap: 0;
-    }
-
-    .lista-items-categorias a{
-        margin: 0;
-    }
-
-    .lista-items-categorias img{
-        margin: 0;
-    }
-
-    .lista-items-categorias a p{
+@media (max-width: 540px) {
+  section .lista-principal-index .lista-items-index {
+    justify-content: center;
+    gap: 0;
+    grid-template-areas: "item-1";
+    grid-template-columns: 1fr; }
+    section .lista-principal-index .lista-items-index a {
+      margin: 0 auto; }
+    section .lista-principal-index .lista-items-index .item-dcompra-2 {
+      display: none; }
+  section .lista-principal-index .lista-items-categorias {
+    text-align: left;
+    justify-content: center;
+    display: grid;
+    grid-template-areas: "cat-1" "cat-2" "cat-3" "cat-4" "cat-5";
+    gap: 0;
+    grid-template-columns: 1fr; }
+    section .lista-principal-index .lista-items-categorias a {
+      margin: 0; }
+      section .lista-principal-index .lista-items-categorias a p {
         text-align: left;
         display: inline-block;
         width: 30%;
-        padding-left: 1rem;
-    }
-    
-    .foot-info p span{
-        display: none;
-    }
-}
+        padding-left: 1rem; }
+  .section-login {
+    margin: 1rem auto; }
+    .section-login h2 {
+      font-size: 1.2rem;
+      letter-spacing: 0.01rem; }
+    .section-login form {
+      padding: 1.5rem 0.8rem;
+      margin: 0.8rem 0;
+      width: 90%; }
+      .section-login form fieldset {
+        width: 90%;
+        margin: 0 auto; }
+        .section-login form fieldset div .correo-login-dcompras {
+          width: 95%; }
+        .section-login form fieldset div .boton-login-dcompras {
+          margin-top: 0.8rem;
+          width: 60%; }
+  footer .foot-info p span {
+    display: none; } }

@@ -1,0 +1,339 @@
+/* Propiedades para pantallas pequeñas */
+
+@media (max-width: 1250px){
+    header{
+        .header-dcompras{
+            width: 60rem;
+            a{
+                padding: 0;
+                width: 20%;
+            }
+            form{
+                width: 60%;
+                input{
+                    width: 95%;
+                }
+            } 
+        }
+        .header-login-dcompras{
+            width: 90%;
+        }
+    }
+    section{
+        .ad-dcompras{
+            width: 60rem;
+        }
+        .lista-principal-index{
+            width: 60rem;
+            margin: 2rem 0;
+            .lista-items-index{
+                grid-template-areas: 
+                "item-1 item-2 item-3 item-4";
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                .item-dcompra-5{
+                    display: none;
+                }
+            }
+        }
+        .lista-items-categorias{
+            width: 60rem;
+            a{
+                img{
+                    width: 11.2rem;
+                }
+                p{
+                    font-size: 0.95rem !important;
+                }
+            }
+        }
+    }
+    footer{
+        .foot-info{
+            width: 60rem;
+        }
+    }
+    
+}
+
+@media (max-width: 1000px){
+    header{
+        .header-dcompras{
+            width: 50rem;
+        }    
+    }
+    section{
+        .ad-dcompras{
+            width: 50rem;
+        }
+        .lista-principal-index{
+            width: 45rem;
+            margin: 1.5rem 0;
+            .lista-items-index{
+                grid-template-areas: 
+                "item-1 item-2 item-3";
+                grid-template-columns: 1fr 1fr 1fr;
+                .item-dcompra-4{
+                    display: none;
+                }
+            }
+        }
+        .lista-items-categorias{
+            width: 45rem;
+            a{
+                img{
+                    width: 8.2rem;
+                }
+                p{
+                    font-size: 0.8rem !important;
+                }
+            }
+        }
+    }
+    footer{
+        .foot-info{
+            width: 50rem;
+        }
+    }
+}
+
+/* Propiedades para pantallas celulares */
+
+@media (max-width: 850px){
+    header{
+        position: sticky;
+        top: -4.2rem;
+        z-index: 3;
+        background-color: white;
+        padding-bottom: 0.6rem;
+        .header-dcompras{
+            width: 90%;
+            justify-content: inherit;
+            a{
+                width: auto;
+                h1{
+                    position: relative;
+                    left: 0;
+                    text-align: left;
+                }
+            }
+            form{
+                display: none;
+            }
+            .login-dcompras{
+                position: absolute;
+                right: 5%;
+            }
+        }
+        .menu-header{
+            display: none;
+        }
+        .nav-dcompras-movil{
+            display: flex;
+            width: 90%;
+            margin: 1rem auto 0;
+            form{
+                display: inline-block;
+                width: 100%;
+                padding: 0.25rem 0 0;
+                input{
+                    width: 95%;
+                    height: 2rem;
+                    border-radius: 0.6rem;
+                    border-style: solid;
+                    border-width: 0.08rem;
+                    padding: 0 0.6rem;
+                    font-size: 1rem;
+                }
+                button{
+                    width: 0;
+                    position: relative;
+                    right: 2.3rem;
+                    color: black;
+                    background-color: #ffffff00;
+                    border-style: none;
+                }
+            }
+            .menu-header-movil{
+                display: inline-block;
+                width: 5rem;
+                nav{
+                    padding: 0;
+                    div{
+                        #navbarTogglerDemo01{
+                            ul{
+                                margin: 1rem 0 0;
+                                padding: 0;
+                                color: black !important;
+                                position: relative;
+                                left: -1.8rem;
+                                li{
+                                    padding: 0.2rem 0.35rem;
+                                    list-style: none;
+                                    border-style: none;
+                                    text-align: right;
+                                    background-color: #ffffff;
+                                    &:hover{
+                                        background-color: #00000033;
+                                    }
+                                    a{
+                                        font-size: 0.9rem;
+                                        color: black !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section{
+        margin-top: 0.5rem;
+        .ad-dcompras{
+            display: block;
+            width: 98%;
+            .img-ad-dcompras{
+                display: none;
+            }
+            .img-ad-dcompras-movil{
+                width: 100%;
+                display: block;
+            }
+        }
+        .lista-principal-index{
+            width: 90%;
+            margin: 1rem 0;
+            .lista-items-index{
+                grid-template-areas: 
+                "item-1 item-2";
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                gap: 10%;
+                .item-dcompra-3{
+                    display: none;
+                }
+                a{
+                    margin: 0 auto;
+                    max-width: 16rem;
+                    height: auto;
+                }
+            }
+        }
+        .lista-items-categorias{
+            width: 100%;
+            a{
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
+    .section-login{
+        form{
+            fieldset{
+                width: 28rem;
+                div{
+                    .correo-login-dcompras{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        position: initial;
+        display: block;
+        .foot-info{
+            width: 100%;
+            p{
+                text-align: center;
+                font-size: 0.5rem;
+                padding: 0.5rem;
+            }
+            a{
+                font-size: 0.7rem;
+                padding: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 540px){
+    section{
+        .lista-principal-index{
+            .lista-items-index{
+                justify-content: center;
+                gap: 0;
+                grid-template-areas: 
+                "item-1";
+                grid-template-columns: 1fr;
+                a{
+                    margin: 0 auto;
+                }
+                .item-dcompra-2{
+                    display: none;
+                }
+            }
+            .lista-items-categorias{
+                text-align: left;
+                justify-content: center;
+                display: grid;
+                grid-template-areas:
+                "cat-1"
+                "cat-2"
+                "cat-3"
+                "cat-4"
+                "cat-5";
+                gap: 0;
+                grid-template-columns: 1fr;
+                a{
+                    margin: 0;
+                    p{
+                        text-align: left;
+                        display: inline-block;
+                        width: 30%;
+                        padding-left: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    .section-login{
+        margin: 1rem auto;
+        h2{
+            font-size: 1.2rem;
+            letter-spacing: 0.01rem;
+        }
+        form{
+            padding: 1.5rem 0.8rem;
+            margin: 0.8rem 0;
+            width: 90%;
+            fieldset{
+                width: 90%;
+                margin: 0 auto;
+                div{
+                    .correo-login-dcompras{
+                        width: 95%;
+                    }
+                    .boton-login-dcompras{
+                        margin-top: 0.8rem;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .foot-info{
+            p{
+                span{
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -4,33 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda Tienda DCompras importadora oficial de Hardware de última generación a precio compretitivo">
+    <meta name="keywords" content="DCompras, tienda, en linea, compras usa, login">
     <!-- Links de fuentes tipograficas -->
     <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700,800,900" rel="stylesheet">
+    <!-- CSS BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Link de CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Link de iconos -->
     <script src="https://kit.fontawesome.com/0fa74f17f6.js" crossorigin="anonymous"></script>
-    <title>DCompras</title>
+    <title>Login DCompras</title>
 </head>
-<body class="body-dcompras">
+<body>
     <!-- Header -->
-    <header class="header-dcompras">
-        <!-- Logo -->
-        <div class="header-dcompras-principal">
+    <header>
+        <div class="header-login-dcompras">
+            <!-- Logo -->
             <a href="../index.html">
                 <h1><span>D</span>COMPRAS</h1>
             </a>
         </div>
     </header>
     <!-- Contenido del log in -->
-    <section>
+    <section class="section-login">
         <h2>Registrate</h2>
         <form action="">
             <fieldset>
                 <legend>Inicia sesión</legend>
                 <div>
-                    <input type="text" id="correo" placeholder="Correo electrónico">
-                    <input type="submit">
+                    <input type="text" id="correo" placeholder="Correo electrónico" class="correo-login-dcompras">
+                    <input type="submit" class="boton-login-dcompras">
                 </div>
             </fieldset>
         </form>
@@ -39,20 +43,27 @@
         <form action="">
             <fieldset>
                 <div>
-                    <input type="button" value="facebook">
-                    <input type="button" value="instagram">
-                    <input type="button" value="gmail">
+                    <input type="button" value="Facebook" class="boton-registro-dcompras">
+                    <input type="button" value="Instagram" class="boton-registro-dcompras">
+                    <input type="button" value="Gmail" class="boton-registro-dcompras">
                 </div>
             </fieldset>
         </form>
     </section>
-    <footer class="footer-index">
-        <p>contacto@dcompras.com</p>
-        <a href="http://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
-        <a href="http://www.twitter.com" target="_blank" class="fa fa-twitter"></a>
-        <a href="http://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
-        <p>© COPYRIGHT 2022 Renzo Loli</p>
+    <footer class="footer-login">
+        <div class="foot-info row mx-auto">
+            <p class="col-3">contacto@dcompras.com</p>
+            <div class="col-6">
+                <a href="http://www.facebook.com" target="_blank" class="fa-brands fa-facebook"></a>
+                <a href="http://www.twitter.com" target="_blank" class="fa-brands fa-twitter"></a>
+                <a href="http://www.instagram.com" target="_blank" class="fa-brands fa-instagram"></a>
+            </div>
+            <p class="col-3">© C<span>OPYRIGHT 2022</span> Renzo Loli</p>
+            </div>
         </div>
+        
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,103 @@
+/* Estilos del logi*/
+
+header{
+    .header-login-dcompras{
+        @extend %flex;
+        text-align: center;
+        width: 75rem;
+        padding: 2rem 0 1rem;
+        border-style: none none solid;
+        @include borders(0.1rem, #00000066);
+        margin: 0 auto;
+        a{
+            padding: 0;
+            width: 100%;
+            h1{
+                margin: 0;
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: black;
+                letter-spacing: -0.05rem;
+                display: inline-block;
+                span{
+                    font-size: 3rem;
+                    display: inline-block;
+                    height: 3.5rem;
+                    background-color: $color-dcompras;
+                    color: white;
+                    font-weight: 800;
+                    padding: 0 0.7rem;
+                    margin-right: 0.3rem;
+                }
+            }
+        }
+    }
+}
+.section-login{
+    margin: 3rem auto;
+    h2{
+        font-weight: 600;
+        font-size: 1.5rem;
+        letter-spacing: 0.02rem;
+        color: $color-dcompras;
+    }
+    form{
+        background-color: #0000000a;
+        padding: 2rem;
+        margin: 1rem 0;
+        fieldset{
+            width: 30rem;
+            legend{
+                font-weight: 500;
+                text-align: left;
+                font-size: 1rem;
+                border-bottom-style: solid;
+                @include borders(0.05rem, #00000066);
+                padding-bottom: 0.5rem;
+            }
+            div{
+                text-align: center;
+                input{
+                    height: 2rem;
+                    border-radius: 0.6rem;
+                    margin-top: 0.5rem;
+                }
+                .correo-login-dcompras{
+                    width: 85%;
+                    border-style: solid;
+                    border-width: 0.08rem;
+                    padding: 0 0.6rem;
+                    font-size: 1rem;
+                }
+                .boton-login-dcompras{
+                    background-color: $color-dcompras;
+                    color: white;
+                    border: none;
+                    padding: 0.1rem 0.6rem;
+                    transition-duration: 0.2s;
+                    &:hover{
+                        background-color: $color-dcompras-2;
+                    }
+                }
+                .boton-registro-dcompras{
+                    display: inline-block;
+                    margin: 0.5rem auto;
+                    width: 80%;
+                    height: 2.2rem;
+                    background-color: $color-dcompras;
+                    color: white;
+                    border: none;
+                    transition-duration: 0.2s;
+                    &:hover{
+                        background-color: $color-dcompras-2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-login{
+    position: fixed;
+    bottom: 0;
+}
