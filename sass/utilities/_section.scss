@@ -91,12 +91,17 @@ section{
                 text-align: center;
                 transition-duration: 0.4s;
                 &:hover{
-                    margin-top: 0;
+                    margin-top: 0.6rem;
                 }
                 img{
                     max-width: 100%;
+                    background-color: $color-dcompras;
                     margin-bottom: 1rem;
                     border-radius: 50%;
+                    transition-duration: 0.4s;
+                    &:hover{
+                        background-color: $color-dcompras-2;
+                    }
                 }
                 p{
                     color: black;

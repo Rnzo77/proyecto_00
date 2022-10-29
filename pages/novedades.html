@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ofertas Tienda DCompras importadora oficial de Hardware de última generación a precio compretitivo">
-    <meta name="keywords" content="tienda, en linea, compras usa, hardware, tarjetas de video, celulares, laptops, originales, garantia, ofertas">
+    <meta name="description" content="Novedades Tienda DCompras importadora oficial de Hardware de última generación a precio compretitivo">
+    <meta name="keywords" content="novedades, tienda, en linea, compras usa, hardware, tarjetas de video, celulares, laptops, originales, garantia, ofertas">
     <!-- Links de fuentes tipograficas -->
     <link href="https://fonts.googleapis.com/css?family=Inter:400,600,700,800,900" rel="stylesheet">
     <!-- CSS BT -->
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <!-- Link de iconos -->
     <script src="https://kit.fontawesome.com/0fa74f17f6.js" crossorigin="anonymous"></script>
-    <title>Ofertas DCompras</title>
+    <title>Novedades DCompras</title>
 </head>
 <body class="body-dcompras">
     <!-- Header -->
@@ -49,7 +49,7 @@
                             <li><a class="dropdown-item" href="#">Consolas y videojuegos</a></li>
                             <li><a class="dropdown-item" href="#">Electrodomesticos</a></li>
                         </ul>
-                    <li class="col"><a id="linkactivo" href="#">Ofertas</a></li>
+                    <li class="col"><a href="ofertas.html">Ofertas</a></li>
                     <li class="col"><a href="historial.html">Historial</a></li>
                     <li class="col"><a href="favoritos.html">Favoritos</a></li>
                     <li class="col"><a href="#">Carrito</a></li>
@@ -73,7 +73,7 @@
                         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                             <ul>
                                 <li><a href="categorias.html">Categorías</a></li>
-                                <li><a href="#">Ofertas</a></li>
+                                <li><a href="ofertas.html">Ofertas</a></li>
                                 <li><a href="historial.html">Historial</a></li>
                                 <li><a href="favoritos.html">Favoritos</a></li>
                                 <li><a href="#">Carrito</a></li>
@@ -88,15 +88,46 @@
     <section class="cont-principal-dcompras">
         <!-- Call to action -->
         <div class="ad-dcompras">
-            <a href="audiovideo.html">
-                <img class="img-ad-dcompras" src="https://i.ibb.co/mzxZTGY/img-ad-3.jpg" class="d-block" alt="...">
-                <img class="img-ad-dcompras-movil" src="https://i.ibb.co/pjPMHS4/img-ad-xl-3.jpg" class="d-block" alt="...">
-            </a>
+            <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="computadoras.html">
+                            <img class="img-ad-dcompras" src="https://i.ibb.co/XZFfzsD/img-ad-1.jpg" class="d-block" alt="...">
+                            <img class="img-ad-dcompras-movil" src="https://i.ibb.co/CHfdyjC/img-ad-xl-1.jpg" class="d-block" alt="...">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="celulares.html">
+                            <img class="img-ad-dcompras" src="https://i.ibb.co/89G90YQ/img-ad-2.jpg" class="d-block" alt="...">
+                            <img class="img-ad-dcompras-movil" src="https://i.ibb.co/MgKsGkr/img-ad-xl-2.jpg" class="d-block" alt="...">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="audiovideo.html">
+                            <img class="img-ad-dcompras" src="https://i.ibb.co/mzxZTGY/img-ad-3.jpg" class="d-block" alt="...">
+                            <img class="img-ad-dcompras-movil" src="https://i.ibb.co/pjPMHS4/img-ad-xl-3.jpg" class="d-block" alt="...">
+                        </a>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
         <!-- Lista principal -->
         <div class="lista-principal-index">
             <h2>
-                <a href="audiovideo.html">Ofertas en Audio y video</a>
+                <a href="audiovideo.html">Novedades en Audio y video</a>
             </h2>
             <div class="lista-items-index">
                 <a class="item-dcompra-1" href="">
@@ -126,15 +157,9 @@
                 </a>
             </div>
         </div>
-        <div class="ad-dcompras">
-            <a href="computadoras.html">
-                <img class="img-ad-dcompras" src="https://i.ibb.co/XZFfzsD/img-ad-1.jpg" class="d-block" alt="...">
-                <img class="img-ad-dcompras-movil" src="https://i.ibb.co/CHfdyjC/img-ad-xl-1.jpg" class="d-block" alt="...">
-            </a>
-        </div>
         <div class="lista-principal-index">
             <h2>
-                <a href="computadoras.html">Ofertas en Computadoras y laptops</a>
+                <a href="computadoras.html">Novedades en Computadoras y laptops</a>
             </h2>
             <div class="lista-items-index">
                 <a class="item-dcompra-1" href="">
@@ -164,15 +189,9 @@
                 </a>
             </div>
         </div>
-        <div class="ad-dcompras">
-            <a href="celulares.html">
-                <img class="img-ad-dcompras" src="https://i.ibb.co/89G90YQ/img-ad-2.jpg" class="d-block" alt="...">
-                <img class="img-ad-dcompras-movil" src="https://i.ibb.co/MgKsGkr/img-ad-xl-2.jpg" class="d-block" alt="...">
-            </a>
-        </div>
         <div class="lista-principal-index">
             <h2>
-                <a href="celulares.html">Ofertas Celulares</a>
+                <a href="celulares.html">Novedades en Celulares</a>
             </h2>
             <div class="lista-items-index">
                 <a class="item-dcompra-1" href="">
@@ -199,6 +218,70 @@
                     <img src="https://i.ibb.co/NrXxc1C/img-ej-item-cel-5.jpg" alt="">
                     <span>AirPods Pro (2nd generation)</span>
                     <p>S/. 200.00</p>
+                </a>
+            </div>
+        </div>
+        <div class="lista-principal-index">
+            <h2>
+                <a href="#">Novedades en Consolas y videojuegos</a>
+            </h2>
+            <div class="lista-items-index">
+                <a class="item-dcompra-1" href="">
+                    <img src="https://i.ibb.co/zFcM4K4/img-ej-item-tvau-1.jpg" alt="">
+                    <span>Smart TV Xiaomi Mi LED 4K 50"</span>
+                    <p>S/. 4 000.00</p>
+                </a>
+                <a class="item-dcompra-2" href="">
+                    <img src="https://i.ibb.co/WtyYVRP/img-ej-item-tvau-2.jpg" alt="">
+                    <span>Samsung 24'' Full HD LED</span>
+                    <p>S/. 3 000.00</p>
+                </a>
+                <a class="item-dcompra-3" href="">
+                    <img src="https://i.ibb.co/n79zhmg/img-ej-item-tvau-3.jpg" alt="">
+                    <span>Nikon D5600 Lente18-55Mm D5600</span>
+                    <p>S/. 6 000.00</p>
+                </a>
+                <a class="item-dcompra-4" href="">
+                    <img src="https://i.ibb.co/jyKNmzG/img-ej-item-tvau-4.jpg" alt="">
+                    <span>LG UHD TV 55'' ThinQ AI</span>
+                    <p>S/. 5 000.00</p>
+                </a>
+                <a class="item-dcompra-5" href="">
+                    <img src="https://i.ibb.co/bv5XSjz/img-ej-item-tvau-5.jpg" alt="">
+                    <span>Equipo Mini LG XBOOM CL87 2350 w</span>
+                    <p>S/. 2 500.00</p>
+                </a>
+            </div>
+        </div>
+        <div class="lista-principal-index">
+            <h2>
+                <a href="#">Novedades en Electrodomesticos</a>
+            </h2>
+            <div class="lista-items-index">
+                <a class="item-dcompra-1" href="">
+                    <img src="https://i.ibb.co/k4JJKxX/img-ej-item-comp-1.jpg" alt="">
+                    <span>Smart TV Xiaomi Mi LED 4K 50"</span>
+                    <p>S/. 3 000.00</p>
+                </a>
+                <a class="item-dcompra-2" href="">
+                    <img src="https://i.ibb.co/k077hSq/img-ej-item-comp-2.jpg" alt="">
+                    <span>Samsung 24'' Full HD LED</span>
+                    <p>S/. 1 500.00</p>
+                </a>
+                <a class="item-dcompra-3" href="">
+                    <img src="https://i.ibb.co/KjHLK8Q/img-ej-item-comp-3.jpg" alt="">
+                    <span>Monitor Samsung 27" T35F Full Hd</span>
+                    <p>S/. 1 000.00</p>
+                </a>
+                <a class="item-dcompra-4" href="">
+                    <img src="https://i.ibb.co/rcs2yZJ/img-ej-item-comp-4.jpg" alt="">
+                    <span>LG UHD TV 55'' ThinQ AI</span>
+                    <p>S/. 2 500.00</p>
+                </a>
+                <a class="item-dcompra-5" href="">
+                    <img src="https://i.ibb.co/z4zDkJy/img-ej-item-comp-5.jpg" alt="">
+                    <span>Equipo Mini LG XBOOM CL87 2350 w</span>
+                    <p>S/. 900.00</p>
                 </a>
             </div>
         </div>
@@ -241,6 +324,7 @@
             <p class="col-3">© C<span>OPYRIGHT 2022</span> Renzo Loli</p>
             </div>
         </div>
+        
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
